@@ -564,7 +564,7 @@ main {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 449px) and (min-width: 350px){
+@media screen and (max-width: 449px) and (min-width: 250px){
   .nav-link {
     font-size: 13px;
   }
