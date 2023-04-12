@@ -120,7 +120,6 @@ main {
   height: 20px;
   width: 20px;
   background-color: rgba(255, 255, 255, 0.5);
-  /* border: 1px solid white; */
   border-radius: 20px;
   
   position: fixed;
@@ -173,6 +172,7 @@ main {
   right: 0;
   bottom: 0;
   backdrop-filter: blur(12vmax);
+  -webkit-backdrop-filter: blur(12vmax);
 }
 
 /*==================== LAYOUT ====================*/
@@ -275,6 +275,7 @@ main {
   height: 425px;
   border-radius: 30px;
   backdrop-filter: blur(15vmax);
+  -webkit-backdrop-filter: blur(15vmax);
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 120px;
@@ -306,7 +307,6 @@ main {
   color: #fff;
   text-align: center;
   border-radius: 9px;
-  position: fixed;
   transition: background-position .6s cubic-bezier(.16,1,.3,1);
   background: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 0);
   background-size: 200% 100%;
@@ -390,6 +390,7 @@ main {
   display: flex;
   border-radius: 30px;
   backdrop-filter: blur(15vmax);
+  -webkit-backdrop-filter: blur(15vmax);
   transition: height .5s cubic-bezier(.16,1,.3,1);
 }
 
@@ -460,6 +461,7 @@ main {
   height: 450px;
   border-radius: 30px;
   backdrop-filter: blur(15vmax);
+  -webkit-backdrop-filter: blur(15vmax);
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 120px;
@@ -492,7 +494,6 @@ main {
   color: white;
   text-align: center;
   border-radius: 9px;
-  position: fixed;
   transition: background-position .6s cubic-bezier(.16,1,.3,1);
   background: linear-gradient(90deg,rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.05) 0);
   background-size: 200% 100%;
@@ -564,7 +565,11 @@ main {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 449px) and (min-width: 250px){
+@media screen and (max-width: 449px) and (min-width: 350px){
+  #trailer {
+    display: none;
+  }
+
   .nav-link {
     font-size: 13px;
   }
@@ -605,6 +610,7 @@ main {
     height: 50px;
     border-radius: 50px;
     backdrop-filter: blur(20vmax);
+    -webkit-backdrop-filter: blur(20vmax);
     align-items: center;
     justify-content: center;
     transition: all .5s cubic-bezier(.16,1,.3,1);
@@ -628,8 +634,8 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgb(26, 26, 26, 0.9);
-    background-blend-mode: multiply;
     backdrop-filter: blur(2vmin);
+    -webkit-backdrop-filter: blur(2vmin);
     align-items: center;
     justify-content: center;
     z-index: 15;
@@ -741,27 +747,27 @@ main {
   
   .first-card {
     z-index: 7;
-    left: -15%;
+    left: 0%;
   }
   
   .second-card {
     z-index: 6;
-    left: -21.5%;
+    left: 0%;
   }
   
   .third-card {
     z-index: 5;
-    left: -43%;
+    left: 0%;
   }
   
   .forth-card {
     z-index: 4;
-    left: -64.5%;
+    left: 0%;
   }
   
   .fifth-card {
     z-index: 3;
-    left: -85.5%;
+    left: 0%;
   }
   
   .card-img {
@@ -880,6 +886,10 @@ main {
 }
 
 @media screen and (max-width: 567px) and (min-width: 450px){
+  #trailer {
+    display: none;
+  }
+
   .nav-link {
     font-size: 13px;
   }
@@ -920,6 +930,7 @@ main {
     height: 50px;
     border-radius: 50px;
     backdrop-filter: blur(20vmax);
+    -webkit-backdrop-filter: blur(20vmax);
     align-items: center;
     justify-content: center;
     transition: all .5s cubic-bezier(.16,1,.3,1);
@@ -945,6 +956,7 @@ main {
     background-color: rgb(26, 26, 26, 0.9);
     background-blend-mode: multiply;
     backdrop-filter: blur(2vmin);
+    -webkit-backdrop-filter: blur(2vmin);
     align-items: center;
     justify-content: center;
     z-index: 15;
@@ -1014,6 +1026,7 @@ main {
   
   .about-description-container {
     margin-top: 10px;
+    margin-bottom: 20px;
     width: 100%;
     align-items: center;
   }
@@ -1061,27 +1074,27 @@ main {
   
   .first-card {
     z-index: 7;
-    left: -15%;
+    left: 0%;
   }
   
   .second-card {
     z-index: 6;
-    left: -21.5%;
+    left: 0%;
   }
   
   .third-card {
     z-index: 5;
-    left: -43%;
+    left: 0%;
   }
   
   .forth-card {
     z-index: 4;
-    left: -64.5%;
+    left: 0%;
   }
   
   .fifth-card {
     z-index: 3;
-    left: -85.5%;
+    left: 0%;
   }
   
   .card-img {
@@ -1199,6 +1212,10 @@ main {
 
 /* For medium devices */
 @media screen and (max-width: 849px) and (min-width: 568px){
+  #trailer {
+    display: none;
+  }
+
   .nav-link {
     font-size: 13px;
   }
@@ -1239,6 +1256,7 @@ main {
     height: 50px;
     border-radius: 50px;
     backdrop-filter: blur(20vmax);
+    -webkit-backdrop-filter: blur(20vmax);
     align-items: center;
     justify-content: center;
     transition: all .5s cubic-bezier(.16,1,.3,1);
@@ -1262,8 +1280,8 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgb(26, 26, 26, 0.9);
-    background-blend-mode: multiply;
     backdrop-filter: blur(2vmin);
+    -webkit-backdrop-filter: blur(2vmin);
     align-items: center;
     justify-content: center;
     z-index: 15;
@@ -1329,6 +1347,7 @@ main {
   
   .about-description-container {
     margin-top: 10px;
+    margin-bottom: 20px;
     width: 100%;
     align-items: center;
   }
@@ -1374,27 +1393,27 @@ main {
   
   .first-card {
     z-index: 7;
-    left: -15%;
+    left: 0%;
   }
   
   .second-card {
     z-index: 6;
-    left: -21.5%;
+    left: 0%;
   }
   
   .third-card {
     z-index: 5;
-    left: -43%;
+    left: 0%;
   }
   
   .forth-card {
     z-index: 4;
-    left: -64.5%;
+    left: 0%;
   }
   
   .fifth-card {
     z-index: 3;
-    left: -85.5%;
+    left: 0%;
   }
   
   .card-img {
@@ -1519,6 +1538,10 @@ main {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 850px){
+  #trailer {
+    display: none;
+  }
+
   .nav-link {
     font-size: 13px;
   }
@@ -1559,6 +1582,7 @@ main {
     height: 50px;
     border-radius: 50px;
     backdrop-filter: blur(20vmax);
+    -webkit-backdrop-filter: blur(20vmax);
     align-items: center;
     justify-content: center;
     transition: all .5s cubic-bezier(.16,1,.3,1);
@@ -1582,8 +1606,8 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgb(26, 26, 26, 0.9);
-    background-blend-mode: multiply;
     backdrop-filter: blur(2vmin);
+    -webkit-backdrop-filter: blur(2vmin);
     align-items: center;
     justify-content: center;
     z-index: 15;
@@ -1649,6 +1673,7 @@ main {
   
   .about-description-container {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 70%;
     align-items: center;
   }
@@ -1695,27 +1720,27 @@ main {
   
   .first-card {
     z-index: 7;
-    left: -15%;
+    left: 0%;
   }
   
   .second-card {
     z-index: 6;
-    left: -21.5%;
+    left: 0%;
   }
   
   .third-card {
     z-index: 5;
-    left: -43%;
+    left: 0%;
   }
   
   .forth-card {
     z-index: 4;
-    left: -64.5%;
+    left: 0%;
   }
   
   .fifth-card {
     z-index: 3;
-    left: -85.5%;
+    left: 0%;
   }
   
   .card-img {
@@ -1830,6 +1855,7 @@ main {
   
   .about-description-container {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 60%;
     align-items: center;
   }
@@ -1866,7 +1892,6 @@ main {
 }
 
 @media screen and (max-width:1249px) and (min-width: 1023px) {
-  
   .project-section {
     margin-bottom: 1rem;
   }
@@ -1998,6 +2023,7 @@ main {
   .about-description-container {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-bottom: 20px;
     width: 45%;
   }
 
@@ -2079,6 +2105,7 @@ main {
   
   .about-description-container {
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-bottom: 20px;
     width: 36%;
   }
