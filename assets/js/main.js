@@ -104,18 +104,18 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 
-  // Clear the timeout if it has already been set
-  if (timeoutId) {
-    clearTimeout(timeoutId);
-  }
+  // // Clear the timeout if it has already been set
+  // if (timeoutId) {
+  //   clearTimeout(timeoutId);
+  // }
 
-  // Set a timeout to check for scroll inactivity after 500ms
-  timeoutId = setTimeout(function() {
-    // Your code to run after 3s of scroll inactivity
-    if (currentScrollPos != 0) {
-      toggleHeader(-100);
-    }
-  }, 3000);
+  // // Set a timeout to check for scroll inactivity after 500ms
+  // timeoutId = setTimeout(function() {
+  //   // Your code to run after 3s of scroll inactivity
+  //   if (currentScrollPos != 0) {
+  //     toggleHeader(-100);
+  //   }
+  // }, 3000);
 }
 
 function toggleHeader(val) {
@@ -264,20 +264,12 @@ const triggerPoint2 = 800;
 const triggerPoint3 = 1000;
 const triggerPoint4 = 1200;
 
-const triggerPoint5 = 1200;
-const triggerPoint6 = 1350;
-const triggerPoint7 = 1500;
-const triggerPoint8 = 1650;
-const triggerPoint9 = 1900;
-
 let card = 0;
 let value = 0;
 
 function animateOnScroll() {
 
   if (window.matchMedia("(min-width:1250px)").matches) {
-    // Code to be executed on smaller devices
-    // For example, you could hide certain elements or change their behavior
     if (window.scrollY > triggerPoint0) {
       animateCards(first_card, 0);
     } else {
@@ -306,35 +298,11 @@ function animateOnScroll() {
       animateCards(fifth_card, -85.5);
     }
   } else {
-    // Code to be executed on larger devices
-    // For example, you could show certain elements or change their behavior
-    if (window.scrollY > triggerPoint5) {
-      animateCards(first_card, 0);
-    } else {
-      animateCards(first_card, -15);
-    }
-    if (window.scrollY > triggerPoint6) {
-      animateCards(second_card, 0);
-    } else {
-      animateCards(second_card, -21.5);
-    }
-    if (window.scrollY > triggerPoint7) {
-      animateCards(third_card, 0)
-    } else {
-      animateCards(third_card, -43);
-    }
-  
-    if (window.scrollY > triggerPoint8) {
-      animateCards(forth_card, 0);
-    } else {
-      animateCards(forth_card, -64.5);
-    }
-  
-    if (window.scrollY > triggerPoint9) {
-      animateCards(fifth_card, 0);
-    } else {
-      animateCards(fifth_card, -85.5);
-    }
+    animateCards(first_card, 0);
+    animateCards(second_card, 0);
+    animateCards(third_card, 0);
+    animateCards(forth_card, 0);
+    animateCards(fifth_card, 0);
   }
 }
 
@@ -349,4 +317,6 @@ function animateCards(card, value) {
   });
 }
 
-window.addEventListener('wheel', animateOnScroll);
+// window.addEventListener('wheel', animateOnScroll);
+// window.addEventListener('touchmove', animateOnScroll);
+
