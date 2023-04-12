@@ -21,7 +21,7 @@
         </script>
 
         <title>Khairudin Selamat</title>
-        <link rel="shortcut icon" type="image/png" href="favicon.png?">
+        <link rel="icon" type="image/png" href="favicon.png">
     </head>
     <div class="loading-page-container">
         <div class="loading-page">
@@ -140,7 +140,7 @@
                         <p class="project-title">Projects</p>
                     </div>
                     <div class="project-swiper-wrapper">
-                        <div data-tilt data-tilt-reverse="true" class="swiper-slide first-card">
+                        <div data-tilt data-tilt-reverse="true" class="swiper-slide">
                             <a href="project-1.html" target="_self" class="card">
                                 <img src="assets/img/portfolio6.jpg" alt="" class="card-img">
                                 <div class="text-section">
@@ -153,7 +153,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div data-tilt data-tilt-reverse="true" class="swiper-slide second-card">
+                        <div data-tilt data-tilt-reverse="true" class="swiper-slide">
                             <a href="" class="card">
                                 <img src="assets/img/portfolio5.jpg" alt="" class="card-img">
                                 <div class="text-section">
@@ -166,7 +166,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div data-tilt data-tilt-reverse="true" class="swiper-slide third-card">
+                        <div data-tilt data-tilt-reverse="true" class="swiper-slide">
                             <a href="" class="card">
                                 <img src="assets/img/portfolio4.jpg" alt="" class="card-img">
                                 <div class="text-section">
@@ -179,7 +179,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div data-tilt data-tilt-reverse="true" class="swiper-slide forth-card">
+                        <div data-tilt data-tilt-reverse="true" class="swiper-slide">
                             <a href="" class="card">
                                 <img src="assets/img/portfolio3.jpg" alt="" class="card-img">
                                 <div class="text-section">
@@ -192,7 +192,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div data-tilt data-tilt-reverse="true" class="swiper-slide fifth-card">
+                        <div data-tilt data-tilt-reverse="true" class="swiper-slide">
                             <a href="" class="card">
                                 <img src="assets/img/portfolio2.JPG" alt="" class="card-img">
                                 <div class="text-section">
@@ -254,16 +254,16 @@
             </footer>
         </main>
 
-        <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
-
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
 
         <script type="text/javascript">
-            VanillaTilt.init(document.querySelector(".swiper-slide"), {
+            VanillaTilt.init(document.querySelector('.swiper-slide'), {
                 max: 15,
                 speed: 400
             });
